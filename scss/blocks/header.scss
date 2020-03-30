@@ -1,0 +1,11 @@
+.header {
+  background-color: $yellow;
+  display: flex;
+  justify-content: flex-end;
+  &__burger {
+    cursor: pointer;
+    margin-right: 23px;
+    margin-top: 23px;
+    margin-bottom: 23px;
+  }
+}

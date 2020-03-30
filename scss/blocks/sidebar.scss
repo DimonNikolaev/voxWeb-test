@@ -1,0 +1,147 @@
+@keyframes open {
+  from {
+    transform: translateX(550px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes close {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(550px);
+  }
+}
+
+.sidebar {
+  transform: translateX(550px);
+  animation-name: close;
+  animation-duration: 0.5s;
+  background-color: $yellow;
+  height: 1366px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  &__close {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    cursor: pointer;
+  }
+  &-active {
+    transform: translateX(0);
+    animation-name: open;
+    animation-duration: 0.5s;
+    // position: ;
+  }
+  .menu {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    height: 153px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 85px;
+    &__item {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}
+
+.properties {
+  width: calc(52.83% + 0.017px);
+  height: 116px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  margin-top: 101px;
+  .contact__button {
+    display: none;
+  }
+  &__item {
+    background: #ffffff;
+    border-radius: 29.5px;
+    border: none;
+    position: relative;
+    &::after {
+      display: block;
+      content: '';
+      background: url(../../img/Vector-min-yellow.svg);
+      width: 6px;
+      height: 8px;
+      position: absolute;
+      right: 23px;
+      top: 21px;
+      transform: rotate(90deg);
+    }
+    &_country {
+      width: 150px;
+      height: 49px;
+    }
+    &_date {
+      width: 120px;
+      height: 49px;
+    }
+    &_type-of-travel {
+      width: 280px;
+      height: 49px;
+    }
+  }
+}
+
+.contact {
+  margin-top: 771px;
+  text-align: center;
+  &__tel {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+    display: block;
+  }
+  &__button {
+    background: transparent;
+    padding: 17px 80px;
+    border: 1px solid #000000;
+    border-radius: 29.5px;
+    cursor: pointer;
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 540px) {
+  .contact {
+    margin-top: 104px;
+  }
+  .sidebar {
+    height: 100%;
+    &__active {
+      width: 100%;
+    }
+    &-active {
+      position: fixed;
+    }
+  }
+  .properties {
+    width: auto;
+    height: 246px;
+    &__item {
+      width: 280px;
+      margin: 0 auto;
+    }
+    .contact {
+      &__button {
+        display: block;
+        margin: 0 auto;
+        padding: 17px 111px;
+      }
+    }
+  }
+}

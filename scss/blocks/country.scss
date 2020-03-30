@@ -1,0 +1,114 @@
+.tour {
+  font-weight: 700;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &_item {
+      display: flex;
+      flex-direction: column;
+      width: 48.717%;
+      justify-content: space-between;
+      margin-bottom: 46px;
+      &_img {
+        position: relative;
+        span {
+          position: absolute;
+          width: 160px;
+          height: 50px;
+          background-color: $yellow;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          bottom: 4px;
+        }
+        img {
+          max-width: 100%;
+        }
+      }
+      &_subtitle {
+        color: $yellow;
+        font-size: 9px;
+        margin: 10px 0 7px 0;
+      }
+      &_title {
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 20px;
+      }
+      &_way {
+        color: $grey;
+        font-size: 9px;
+        line-height: 13px;
+        margin-bottom: 15px;
+      }
+      &_attr {
+        font-size: 9px;
+        line-height: 11px;
+        margin-bottom: 12px;
+      }
+      &_status {
+        background-color: red;
+        color: white;
+        border-radius: 3px;
+        padding: 6px 15px;
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .tour {
+    &__content {
+      flex-direction: column;
+      &_item {
+        img {
+          max-width: 100%;
+        }
+        width: 100%;
+      }
+    }
+  }
+  .request {
+    &__content {
+      &_item {
+        &_communication-method {
+          width: 100%;
+        }
+        &_about-us {
+          width: 100%;
+        }
+        .wrap-label {
+          width: 100%;
+        }
+        &_wrap {
+          .request__content_item_social-media {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .tour {
+    &__country {
+      &::after {
+        display: block;
+        content: '';
+        height: 2px;
+        background-color: grey;
+        margin-top: 17px;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.warning {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  margin-right: 15px;
+}

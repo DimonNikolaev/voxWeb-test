@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__burger"><svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="30" height="5" fill="black"/>
+<rect y="9" width="30" height="4" fill="black"/>
+<rect y="17" width="30" height="5" fill="black"/>
+</svg>
+      </div>
+    </header>
+  </body>
+  <div class="container">
+    <div class="tour">
+      <h2 class="tour__country title">ЗИМБАБВЕ</h2>
+      <div class="tour__content"> 
+        <div class="tour__content_item">
+          <div class="tour__content_item_img"><img src="img/item-1.jpg" alt=""><span>от 118 112 Р</span></div><span class="tour__content_item_subtitle">Италия</span>
+          <h3 class="tour__content_item_title">Под небом Тосканы</h3><span class="tour__content_item_way">Сансеполькро — (Перуджа) — Ассизи — Губбио — (Сиена) — Ла Верна — Ангиари — Монтерки — Ареццо — Кортона — (Пиенца) - (Монтепульчано)</span><strong class="tour__content_item_attr">8 дней / 7 ночей Русский язык <br> 27.04.19 - 04.05.19и еще 15 дат</strong><span class="tour__content_item_status">Авиаперелет включен!</span>
+        </div>
+        <div class="tour__content_item">
+          <div class="tour__content_item_img"><img src="img/item-2.jpg" alt=""><span>140 715 Р</span></div><span class="tour__content_item_subtitle">ИСЛАНДИЯ</span>
+          <h3 class="tour__content_item_title">Майские каникулы в Исландии</h3><span class="tour__content_item_way">Рейкьявик — Тингвеллир — Гюдльфосс — Скафтафедль — Сельяландсфосс — Скоугафосс — Йёкюльсаурлоун — Голубая Лагуна — Снайфельсйёкутль — Arnarstapi — Рейкьявик</span><strong class="tour__content_item_attr">8 дней / 7 ночей Русский язык <br>  27.04.19 - 04.05.19и еще 15 дат</strong>
+        </div>
+        <div class="tour__content_item">
+          <div class="tour__content_item_img"><img src="img/item-3.jpg" alt=""><span>37 302 Р</span></div><span class="tour__content_item_subtitle">ТУРЦИЯ</span>
+          <h3 class="tour__content_item_title">Открытие турции</h3><span class="tour__content_item_way">Стамбул — Анкара — Каппадокия — Конья — Памуккале — Эфес — Кушадасы — Пергам — Ассос — Троя — Стамбул</span><strong class="tour__content_item_attr">8 дней / 7 ночей Русский язык <br> 27.04.19 - 04.05.19и еще 15 дат</strong>
+        </div>
+        <div class="tour__content_item">
+          <div class="tour__content_item_img"><img src="img/item-4.jpg" alt=""><span>145 000 Р</span></div><span class="tour__content_item_subtitle">НОРВЕГИЯ, ШПИЦБЕРГЕН</span>
+          <h3 class="tour__content_item_title">От Свальбарда до Груманта</h3><strong class="tour__content_item_attr">8 дней / 7 ночей Русский язык <br> 27.04.19 - 04.05.19и еще 15 дат</strong><span class="tour__content_item_status">Гарантированный тур!</span>
+        </div>
+      </div>
+    </div>
+    <form class="request" id="form-request">
+      <h2 class="request__title title">Заявка на подбор путешествия</h2>
+      <div class="request__content_item"><span class="request__content_title">НЕМНОГО О ВАС</span>
+        <div class="request__content_item_wrap">
+          <label class="request__content_about-you wrap-label"><span>ИМЯ </span>
+            <input class="request__content_name" name="username" type="text">
+          </label>
+          <label class="request__content_tel wrap-label"><span>ТЕЛЕФОН </span>
+            <input class="request__content_tel" placeholder="+7" name="phone" type="text">
+          </label>
+        </div>
+      </div>
+      <div class="request__content_item"><span class="request__content_title">О ПУТЕШЕСТВИИ</span>
+        <div class="request__content_item_wrap">
+          <label class="request__content_about-you wrap-label"><span>КУДА И КОГДА ХОТИТЕ ПОЕХАТЬ ?</span>
+            <input class="request__content_name" placeholder="Континент, страна или город" name="where" type="text">
+          </label>
+          <label class="request__content_tel wrap-label"><span>КОГДА?</span>
+            <input class="request__content_tel" placeholder="Даты или временной интервал" name="when" type="text">
+          </label>
+        </div>
+      </div>
+      <div class="request__content_checkbox">
+        <div class="request__content_item_communication-method request__content_item"><span class="request__content_title request__content_title-checkbox">УДОБНЫЙ СПОСОБ СВЯЗИ</span>
+          <div class="request__content_item_wrap communication-method">
+            <div class="request__content_item_viber request__content_item_social-media"><span>VIBER</span>
+              <div class="checkbox"></div>
+            </div>
+            <div class="request__content_item_whatsapp request__content_item_social-media"><span>WHATSAPP</span>
+              <div class="checkbox"></div>
+            </div>
+            <div class="request__content_item_email request__content_item_social-media"><span>ПОЧТА</span>
+              <div class="checkbox"></div>
+            </div>
+            <div class="request__content_item_tel request__content_item_social-media"><span>ТЕЛЕФОН</span>
+              <div class="checkbox"></div>
+            </div>
+          </div>
+        </div>
+        <div class="request__content_item_about-us request__content_item"><span class="request__content_title request__content_title-checkbox">ОТКУДА УЗНАЛИ О НАС</span>
+          <div class="request__content_item_wrap about-us">
+            <div class="request__content_item_viber request__content_item_social-media request__content_item_internet"><span>ИНТЕРНЕТ</span>
+              <div class="checkbox"></div>
+            </div>
+            <div class="request__content_item_whatsapp request__content_item_social-media request__content_item_recomended"><span>РЕКОМЕНДОВАЛИ <br> ДРУЗЬЯ</span>
+              <div class="checkbox"></div>
+            </div>
+            <div class="request__content_item_email request__content_item_social-media request__content_item_from-social-media"><span>СОЦ.СЕТИ</span>
+              <div class="checkbox"></div>
+            </div>
+            <div class="request__content_item_tel request__content_item_social-media request__content_item_already-traveled"><span>УЖЕ ЕЗДИЛ</span>
+              <div class="checkbox"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div class="fresh-offers">
+      <div class="fresh-offers__item">
+        <div class="checkbox"></div>
+        <div class="fresh-offers__item_text"><span class="fresh-offers__item_title">Получать свежие предложения по электронной почте</span><span class="fresh-offers__item_description"> Каждую неделю мы делаем для вас обзор лучших экспедиций, статей и лайфхаков для путешественников. Если вдруг вам не понравится, вы сможете отписаться в любой момент.</span></div>
+      </div>
+    </div>
+    <div class="fresh-offers">
+      <div class="fresh-offers__item">
+        <div class="checkbox"></div>
+        <div class="fresh-offers__item_text"><span class="fresh-offers__item_title">С обработкой своих персональных данных согласен</span><span class="fresh-offers__item_description">Отправляя заявку я подтверждаю согласие с условиями Пользовательского соглашения</span></div>
+      </div>
+    </div>
+    <div class="fresh-offers">
+      <div class="fresh-offers__item">
+        <div class="warning"></div>
+        <div class="fresh-offers__item_text"><span class="fresh-offers__item_description">Отправляя заявку я подтверждаю согласие с условиями Пользовательского соглашения</span></div>
+      </div>
+    </div>
+    <aside class="sidebar"><img class="sidebar__close" src="/img/sidebar/Group.svg">
+      <div class="properties">
+        <button class="properties__item properties__item_country">Страны</button>
+        <button class="properties__item properties__item_date">Даты</button>
+        <button class="properties__item properties__item_type-of-travel">Тип путешествия</button>
+        <button class="contact__button">НАЙТИ</button>
+      </div>
+      <div class="menu"><a class="menu__item" href="">ПУТЕШЕСТВИЯ</a><a class="menu__item" href="">О НАС</a><a class="menu__item" href="">ОТЗЫВЫ</a><a class="menu__item" href="">БЛОГ</a></div>
+      <div class="contact"><a class="contact__tel" href="+7 (495) 123-45-67">+7 (495) 123-45-67</a>
+        <button class="contact__button">ПОДБЕРИТЕ МНЕ ТУР</button>
+      </div>
+    </aside>
+    <button class="button">ОТПРАВИТЬ</button>
+    <div class="calendar">
+      <div class="calendar-wrapper"> 
+        <div class="calendar__top"><span>Даты</span><img src="/img/Vector-min-yellow.svg" alt=""></div>
+        <button id="btnPrev" type="button"><img src="/img/Vector-min-yellow.svg" alt=""></button>
+        <button id="btnNext" type="button"><img src="/img/Vector-min-yellow.svg" alt=""></button>
+        <div id="divCal"></div>
+      </div>
+    </div>
+    <div class="accordion">
+      <ul class="accordion__items"><span class="accordion__country">Страны </span>
+        <li class="accordion__item">
+          <div class="accordion__title">
+            <h3>Южная Америка</h3>
+          </div>
+          <ul class="accordion__content">
+            <li><a href="#">Аргентина</a>  </li>
+            <li><a href="#">Бразилия</a>    </li>
+            <li><a href="#">Перу</a>   </li>
+            <li><a href="#">Уругвай</a>     </li>
+            <li><a href="#">Чили</a>   </li>
+            <li><a href="#">Эквадор</a>    </li>
+            <li><a class="accordion__content_yellow" href="#">Все туры на континенте</a>    </li>
+          </ul>
+        </li>
+        <li class="accordion__item">
+          <div class="accordion__title">
+            <h3>Северная Америка</h3>
+          </div>
+          <ul class="accordion__content">
+            <li><a href="#">Аргентина</a>  </li>
+            <li><a href="#">Бразилия</a>    </li>
+            <li><a href="#">Перу</a>   </li>
+            <li><a href="#">Уругвай</a>     </li>
+            <li><a href="#">Чили</a>   </li>
+            <li><a href="#">Эквадор</a>    </li>
+            <li class="accordion__content_yellow"><a href="#">Все туры на континенте</a>    </li>
+          </ul>
+        </li>
+        <li class="accordion__item">
+          <div class="accordion__title">
+            <h3>Арктика и Антарктида</h3>
+          </div>
+          <ul class="accordion__content">
+            <li><a href="#">Аргентина</a>  </li>
+            <li><a href="#">Бразилия</a>    </li>
+            <li><a href="#">Перу</a>   </li>
+            <li><a href="#">Уругвай</a>     </li>
+            <li><a href="#">Чили</a>   </li>
+            <li><a href="#">Эквадор</a>    </li>
+            <li class="accordion__content_yellow"><a href="#">Все туры на континенте</a>    </li>
+          </ul>
+        </li>
+        <li class="accordion__item">
+          <div class="accordion__title">
+            <h3>Африка</h3>
+          </div>
+          <ul class="accordion__content">
+            <li><a href="#">Аргентина</a>  </li>
+            <li><a href="#">Бразилия</a>    </li>
+            <li><a href="#">Перу</a>   </li>
+            <li><a href="#">Уругвай</a>     </li>
+            <li><a href="#">Чили</a>   </li>
+            <li><a href="#">Эквадор</a>    </li>
+            <li class="accordion__content_yellow"><a href="#">Все туры на континенте</a>    </li>
+          </ul>
+        </li>
+        <li class="accordion__item">
+          <div class="accordion__title">
+            <h3>Австралия и Океания</h3>
+          </div>
+          <ul class="accordion__content">
+            <li><a href="#">Аргентина</a>  </li>
+            <li><a href="#">Бразилия</a>    </li>
+            <li><a href="#">Перу</a>   </li>
+            <li><a href="#">Уругвай</a>     </li>
+            <li><a href="#">Чили</a>   </li>
+            <li><a href="#">Эквадор</a>    </li>
+            <li class="accordion__content_yellow"><a href="#">Все туры на континенте</a>    </li>
+          </ul>
+        </li>
+        <li class="accordion__item">
+          <div class="accordion__title">
+            <h3>Европа</h3>
+          </div>
+          <ul class="accordion__content">
+            <li><a href="#">Аргентина</a>  </li>
+            <li><a href="#">Бразилия</a>    </li>
+            <li><a href="#">Перу</a>   </li>
+            <li><a href="#">Уругвай</a>     </li>
+            <li><a href="#">Чили</a>   </li>
+            <li><a href="#">Эквадор</a>    </li>
+            <li class="accordion__content_yellow"><a href="#">Все туры на континенте</a>    </li>
+          </ul>
+        </li>
+        <li class="accordion__item">
+          <div class="accordion__title">
+            <h3>Россия</h3>
+          </div>
+          <ul class="accordion__content">
+            <li><a href="#">Аргентина</a>  </li>
+            <li><a href="#">Бразилия</a>    </li>
+            <li><a href="#">Перу</a>   </li>
+            <li><a href="#">Уругвай</a>     </li>
+            <li><a href="#">Чили</a>   </li>
+            <li><a href="#">Эквадор</a>    </li>
+            <li class="accordion__content_yellow"><a href="#">Все туры на континенте</a>    </li>
+          </ul>
+        </li>
+        <li class="accordion__item">
+          <div class="accordion__title">
+            <h3>Азия</h3>
+          </div>
+          <ul class="accordion__content">
+            <li><a href="#">Аргентина</a>  </li>
+            <li><a href="#">Бразилия</a>    </li>
+            <li><a href="#">Перу</a>   </li>
+            <li><a href="#">Уругвай</a>     </li>
+            <li><a href="#">Чили</a>   </li>
+            <li><a href="#">Эквадор</a>    </li>
+            <li class="accordion__content_yellow"><a href="#">Все туры на континенте</a>    </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="type-of-travel accordion">
+      <ul class="accordion__items"><span class="accordion__country">Тип путешествия</span>
+        <li class="accordion__item">
+          <div class="accordion__title">
+            <h3>Активный</h3>
+          </div>
+          <div class="accordion__title">   
+            <h3>Майские</h3>
+          </div>
+          <div class="accordion__title">
+            <h3>На авто</h3>
+          </div>
+          <div class="accordion__title">
+            <h3>На корабле</h3>
+          </div>
+          <div class="accordion__title">
+            <h3>Новый год</h3>
+          </div>
+          <div class="accordion__title">
+            <h3>Поход</h3>
+          </div>
+          <div class="accordion__title">
+            <h3>Серфинг</h3>
+          </div>
+          <div class="accordion__title">
+            <h3>Эксклюзив</h3>
+          </div>
+          <div class="accordion__title">
+            <h3>Экскурсионный</h3>
+          </div>
+          <div class="accordion__title">
+            <h3>Экспедиция</h3>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/calendar.js"></script>
+  <script src="js/acordion.js"></script>
+</html>

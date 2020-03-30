@@ -1,0 +1,135 @@
+.request {
+  &__content {
+    &_checkbox {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &_item {
+      &_communication-method {
+        margin-top: 38px;
+      }
+      &_about-us {
+        margin-top: 38px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 35px;
+      }
+      &_wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      &_wrap.communication-method {
+        margin-top: 35px;
+      }
+      &_wrap.about-us {
+        margin-top: 17px;
+        align-items: flex-end;
+      }
+      &_social-media {
+        text-align: center;
+        span {
+          font-size: 10px;
+          line-height: 12px;
+        }
+      }
+      &_viber {
+        margin-left: 21px;
+        margin-right: 47px;
+      }
+      &_whatsapp {
+        margin-right: 33px;
+      }
+      &_email {
+        margin-right: 36px;
+      }
+    }
+    &_title {
+      font-weight: 500;
+      border-bottom: 2px solid #000;
+    }
+    &_title.request__content_title-checkbox {
+      margin-bottom: 31px;
+    }
+  }
+}
+
+.wrap {
+  &-label {
+    display: flex;
+    flex-direction: column;
+    width: 48.717%;
+    span {
+      margin-bottom: 8px;
+      margin-top: 31px;
+      font-weight: 700;
+      font-size: 10px;
+    }
+    input {
+      height: 50px;
+      border-radius: 3px;
+      border: 1px solid #e7e7e7;
+      padding: 19px 0 19px 30px;
+    }
+    label {
+      margin-top: 20px;
+    }
+  }
+}
+
+.checkbox {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid #e7e7e7;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  margin: 9px auto 0 auto;
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    background-color: #e7e7e7;
+    transform: scale(1.2);
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+
+.checkbox-checked {
+  cursor: default;
+  animation: shadow-pulse 0.5s 1;
+}
+
+.checkbox-checked:after {
+  position: absolute;
+  content: '';
+  display: block;
+  background: url('../../img/Vector.svg') no-repeat;
+  width: 17px;
+  height: 13px;
+  top: 12px;
+  left: 9px;
+}
+
+#where-error,
+#username-error,
+#phone-error,
+#when-error {
+  color: red;
+  font-size: 10px;
+  font-weight: 500;
+}
+
+input.phone-error {
+  border: 1px solid red;
+}

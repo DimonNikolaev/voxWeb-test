@@ -1,0 +1,40 @@
+.fresh-offers {
+  .checkbox {
+    margin: 0 15px 0 0;
+    width: 15px;
+    height: 15px;
+  }
+  .checkbox.checkbox-checked::after {
+    background: url(../../img/Vector-min.svg) no-repeat;
+    top: 3px;
+    left: 0px;
+  }
+  &__item {
+    display: flex;
+    &:nth-child(1) {
+      margin-bottom: 40px;
+    }
+    &_text {
+      display: flex;
+      flex-direction: column;
+    }
+    &_title {
+      font-weight: 500;
+      font-size: 10px;
+      margin-bottom: 11px;
+    }
+    &_description {
+      font-weight: 500;
+      font-size: 10px;
+      color: $grey;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .fresh-offers {
+    .checkbox {
+      min-width: 15px;
+    }
+  }
+}

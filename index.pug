@@ -1,0 +1,271 @@
+doctype html
+html(lang="en")
+    head
+        title= "Тестовое задание"
+        link(rel="stylesheet" href="css/style.min.css")
+    body
+        header.header
+            .header__burger
+                <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="30" height="5" fill="black"/>
+                    <rect y="9" width="30" height="4" fill="black"/>
+                    <rect y="17" width="30" height="5" fill="black"/>
+                </svg>
+    .container
+        .tour
+            h2.tour__country.title ЗИМБАБВЕ
+            .tour__content 
+                .tour__content_item
+                    .tour__content_item_img
+                        img(src="img/item-1.jpg" alt="")
+                        span от 118 112 Р
+                    span.tour__content_item_subtitle Италия
+                    h3.tour__content_item_title Под небом Тосканы
+                    span.tour__content_item_way Сансеполькро — (Перуджа) — Ассизи — Губбио — (Сиена) — Ла Верна — Ангиари — Монтерки — Ареццо — Кортона — (Пиенца) - (Монтепульчано)
+                    strong.tour__content_item_attr 8 дней / 7 ночей Русский язык <br> 27.04.19 - 04.05.19и еще 15 дат
+                    span.tour__content_item_status Авиаперелет включен!
+                .tour__content_item
+                    .tour__content_item_img
+                        img(src="img/item-2.jpg" alt="")
+                        span 140 715 Р
+                    span.tour__content_item_subtitle ИСЛАНДИЯ
+                    h3.tour__content_item_title Майские каникулы в Исландии
+                    span.tour__content_item_way Рейкьявик — Тингвеллир — Гюдльфосс — Скафтафедль — Сельяландсфосс — Скоугафосс — Йёкюльсаурлоун — Голубая Лагуна — Снайфельсйёкутль — Arnarstapi — Рейкьявик
+                    strong.tour__content_item_attr 8 дней / 7 ночей Русский язык <br>  27.04.19 - 04.05.19и еще 15 дат
+                .tour__content_item
+                    .tour__content_item_img
+                        img(src="img/item-3.jpg" alt="")
+                        span 37 302 Р
+                    span.tour__content_item_subtitle ТУРЦИЯ
+                    h3.tour__content_item_title Открытие турции
+                    span.tour__content_item_way Стамбул — Анкара — Каппадокия — Конья — Памуккале — Эфес — Кушадасы — Пергам — Ассос — Троя — Стамбул
+                    strong.tour__content_item_attr 8 дней / 7 ночей Русский язык <br> 27.04.19 - 04.05.19и еще 15 дат
+                .tour__content_item
+                    .tour__content_item_img
+                        img(src="img/item-4.jpg" alt="")
+                        span 145 000 Р
+                    span.tour__content_item_subtitle НОРВЕГИЯ, ШПИЦБЕРГЕН
+                    h3.tour__content_item_title От Свальбарда до Груманта
+                    strong.tour__content_item_attr 8 дней / 7 ночей Русский язык <br> 27.04.19 - 04.05.19и еще 15 дат
+                    span.tour__content_item_status Гарантированный тур!
+        form.request#form-request
+            h2.request__title.title Заявка на подбор путешествия
+            .request__content_item
+                span.request__content_title НЕМНОГО О ВАС
+                .request__content_item_wrap
+                    label.request__content_about-you.wrap-label
+                        span ИМЯ 
+                        input.request__content_name(name="username" type="text")
+                    label.request__content_tel.wrap-label
+                        span ТЕЛЕФОН 
+                        input.request__content_tel(placeholder="+7" name="phone" type="text")
+            .request__content_item
+                span.request__content_title О ПУТЕШЕСТВИИ
+                .request__content_item_wrap
+                    label.request__content_about-you.wrap-label
+                        span КУДА И КОГДА ХОТИТЕ ПОЕХАТЬ ?
+                        input.request__content_name(placeholder="Континент, страна или город" name="where" type="text")
+                    label.request__content_tel.wrap-label
+                        span КОГДА?
+                        input.request__content_tel(placeholder="Даты или временной интервал" name="when" type="text")
+            .request__content_checkbox
+                .request__content_item_communication-method.request__content_item
+                    span.request__content_title.request__content_title-checkbox УДОБНЫЙ СПОСОБ СВЯЗИ
+                    .request__content_item_wrap.communication-method
+                        .request__content_item_viber.request__content_item_social-media
+                            span VIBER
+                            .checkbox
+                        .request__content_item_whatsapp.request__content_item_social-media
+                            span WHATSAPP
+                            .checkbox
+                        .request__content_item_email.request__content_item_social-media
+                            span ПОЧТА
+                            .checkbox
+                        .request__content_item_tel.request__content_item_social-media
+                            span ТЕЛЕФОН
+                            .checkbox
+                .request__content_item_about-us.request__content_item
+                    span.request__content_title.request__content_title-checkbox ОТКУДА УЗНАЛИ О НАС
+                    .request__content_item_wrap.about-us
+                        .request__content_item_viber.request__content_item_social-media.request__content_item_internet
+                            span ИНТЕРНЕТ
+                            .checkbox
+                        .request__content_item_whatsapp.request__content_item_social-media.request__content_item_recomended
+                            span РЕКОМЕНДОВАЛИ <br> ДРУЗЬЯ
+                            .checkbox
+                        .request__content_item_email.request__content_item_social-media.request__content_item_from-social-media
+                            span СОЦ.СЕТИ
+                            .checkbox
+                        .request__content_item_tel.request__content_item_social-media.request__content_item_already-traveled
+                            span УЖЕ ЕЗДИЛ
+                            .checkbox
+        .fresh-offers
+            .fresh-offers__item
+                .checkbox
+                .fresh-offers__item_text
+                    span.fresh-offers__item_title Получать свежие предложения по электронной почте
+                    span.fresh-offers__item_description  Каждую неделю мы делаем для вас обзор лучших экспедиций, статей и лайфхаков для путешественников. Если вдруг вам не понравится, вы сможете отписаться в любой момент.
+        .fresh-offers
+            .fresh-offers__item
+                .checkbox
+                .fresh-offers__item_text
+                    span.fresh-offers__item_title С обработкой своих персональных данных согласен
+                    span.fresh-offers__item_description Отправляя заявку я подтверждаю согласие с условиями Пользовательского соглашения
+        .fresh-offers
+            .fresh-offers__item
+                .warning
+                .fresh-offers__item_text
+                    span.fresh-offers__item_description Отправляя заявку я подтверждаю согласие с условиями Пользовательского соглашения
+        aside.sidebar
+            img.sidebar__close(src="/img/sidebar/Group.svg") 
+            .properties
+                button.properties__item.properties__item_country Страны
+                button.properties__item.properties__item_date Даты
+                button.properties__item.properties__item_type-of-travel Тип путешествия
+                button.contact__button НАЙТИ
+            .menu
+                a.menu__item(href="") ПУТЕШЕСТВИЯ
+                a.menu__item(href="") О НАС
+                a.menu__item(href="") ОТЗЫВЫ
+                a.menu__item(href="") БЛОГ
+            .contact
+                a.contact__tel(href="+7 (495) 123-45-67") +7 (495) 123-45-67
+                button.contact__button ПОДБЕРИТЕ МНЕ ТУР
+        button.button ОТПРАВИТЬ
+        .calendar
+            .calendar-wrapper 
+                .calendar__top
+                    span Даты
+                    img(src="/img/Vector-min-yellow.svg" alt="")
+                button#btnPrev(type="button")
+                    img(src="/img/Vector-min-yellow.svg" alt="")
+                button#btnNext(type="button")
+                    img(src="/img/Vector-min-yellow.svg" alt="")
+                #divCal
+        .accordion
+            ul.accordion__items
+                span.accordion__country Страны 
+                li.accordion__item
+                    .accordion__title
+                        h3 Южная Америка
+                    ul.accordion__content
+                        li <a href="#">Аргентина</a>  
+                        li <a href="#">Бразилия</a>    
+                        li <a href="#">Перу</a>   
+                        li <a href="#">Уругвай</a>     
+                        li <a href="#">Чили</a>   
+                        li <a href="#">Эквадор</a>    
+                        li <a class="accordion__content_yellow" href="#">Все туры на континенте</a>    
+                li.accordion__item
+                    .accordion__title
+                        h3 Северная Америка
+                    ul.accordion__content
+                        li <a href="#">Аргентина</a>  
+                        li <a href="#">Бразилия</a>    
+                        li <a href="#">Перу</a>   
+                        li <a href="#">Уругвай</a>     
+                        li <a href="#">Чили</a>   
+                        li <a href="#">Эквадор</a>    
+                        li.accordion__content_yellow <a href="#">Все туры на континенте</a>    
+                li.accordion__item
+                    .accordion__title
+                        h3 Арктика и Антарктида
+                    ul.accordion__content
+                        li <a href="#">Аргентина</a>  
+                        li <a href="#">Бразилия</a>    
+                        li <a href="#">Перу</a>   
+                        li <a href="#">Уругвай</a>     
+                        li <a href="#">Чили</a>   
+                        li <a href="#">Эквадор</a>    
+                        li.accordion__content_yellow <a href="#">Все туры на континенте</a>    
+                li.accordion__item
+                    .accordion__title
+                        h3 Африка
+                    ul.accordion__content
+                        li <a href="#">Аргентина</a>  
+                        li <a href="#">Бразилия</a>    
+                        li <a href="#">Перу</a>   
+                        li <a href="#">Уругвай</a>     
+                        li <a href="#">Чили</a>   
+                        li <a href="#">Эквадор</a>    
+                        li.accordion__content_yellow <a href="#">Все туры на континенте</a>    
+
+                li.accordion__item
+                    .accordion__title
+                        h3 Австралия и Океания
+                    ul.accordion__content
+                        li <a href="#">Аргентина</a>  
+                        li <a href="#">Бразилия</a>    
+                        li <a href="#">Перу</a>   
+                        li <a href="#">Уругвай</a>     
+                        li <a href="#">Чили</a>   
+                        li <a href="#">Эквадор</a>    
+                        li.accordion__content_yellow <a href="#">Все туры на континенте</a>    
+
+                li.accordion__item
+                    .accordion__title
+                        h3 Европа
+                    ul.accordion__content
+                        li <a href="#">Аргентина</a>  
+                        li <a href="#">Бразилия</a>    
+                        li <a href="#">Перу</a>   
+                        li <a href="#">Уругвай</a>     
+                        li <a href="#">Чили</a>   
+                        li <a href="#">Эквадор</a>    
+                        li.accordion__content_yellow <a href="#">Все туры на континенте</a>    
+
+                li.accordion__item
+                    .accordion__title
+                        h3 Россия
+                    ul.accordion__content
+                        li <a href="#">Аргентина</a>  
+                        li <a href="#">Бразилия</a>    
+                        li <a href="#">Перу</a>   
+                        li <a href="#">Уругвай</a>     
+                        li <a href="#">Чили</a>   
+                        li <a href="#">Эквадор</a>    
+                        li.accordion__content_yellow <a href="#">Все туры на континенте</a>    
+
+                li.accordion__item
+                    .accordion__title
+                        h3 Азия
+                    ul.accordion__content
+                        li <a href="#">Аргентина</a>  
+                        li <a href="#">Бразилия</a>    
+                        li <a href="#">Перу</a>   
+                        li <a href="#">Уругвай</a>     
+                        li <a href="#">Чили</a>   
+                        li <a href="#">Эквадор</a>    
+                        li.accordion__content_yellow <a href="#">Все туры на континенте</a>    
+        .type-of-travel.accordion
+            ul.accordion__items
+                span.accordion__country Тип путешествия
+                li.accordion__item
+                    .accordion__title
+                        h3 Активный
+                    .accordion__title    
+                        h3 Майские
+                    .accordion__title
+                        h3 На авто
+                    .accordion__title
+                        h3 На корабле
+                    .accordion__title
+                        h3 Новый год
+                    .accordion__title
+                        h3 Поход
+                    .accordion__title
+                        h3 Серфинг
+                    .accordion__title
+                        h3 Эксклюзив
+                    .accordion__title
+                        h3 Экскурсионный
+                    .accordion__title
+                        h3 Экспедиция
+
+    script(src="https://code.jquery.com/jquery-3.4.1.min.js")
+    script(src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js")
+    script(src="js/script.js")
+    script(src="js/calendar.js")
+    script(src="js/acordion.js")
+
+
