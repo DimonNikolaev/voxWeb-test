@@ -18,13 +18,15 @@
 
 .sidebar {
   transform: translateX(550px);
-  animation-name: close;
-  animation-duration: 0.5s;
   background-color: $yellow;
   height: 1366px;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
+  &-close {
+    animation-name: close;
+    animation-duration: 0.5s;
+  }
   &__close {
     position: absolute;
     top: 21px;

@@ -1,14 +1,15 @@
-$('.checkbox').click(function() {
+$('.checkbox').click(function () {
   $(this).toggleClass('checkbox-checked');
   return false;
 });
 
-$('.header__burger').click(function(e) {
+$('.header__burger').click(function (e) {
   e.preventDefault();
+  $('.sidebar').toggleClass('sidebar-active');
 });
 
-$('.header__burger, .sidebar__close').click(function(e) {
-  e.preventDefault();
+$('.sidebar__close').click(function () {
+  $('.sidebar-active').toggleClass('sidebar-close');
   $('.sidebar').toggleClass('sidebar-active');
 });
 
@@ -23,7 +24,7 @@ $('.sidebar__close').click(() => {
   $('.contact__button').css('margin-top', '24px');
 });
 
-$('.properties__item_date').click(function(e) {
+$('.properties__item_date').click(function (e) {
   $('.contact__button').css('margin-top', '188px');
   $('.properties__item').css('opacity', '0');
   $('.calendar').toggle();
@@ -32,16 +33,16 @@ $('.properties__item_date').click(function(e) {
   $('.contact__tel').css('display', 'none');
   $('.contact').css('margin-top', '188px');
 });
-$('.properties__item_type-of-travel').click(function(e) {
-  $('.contact__button').css('margin-top', '188px');
+$('.properties__item_type-of-travel').click(function (e) {
+  $('.contact__button').css('margin-top', '261px');
   $('.properties__item').css('opacity', '0');
   $('.type-of-travel').css('display', 'block');
   $('.menu').css('display', 'none');
   $('.contact__tel').css('display', 'none');
   $('.contact').css('margin-top', '188px');
 });
-$('.properties__item_country').click(function(e) {
-  $('.contact__button').css('margin-top', '188px');
+$('.properties__item_country').click(function (e) {
+  $('.contact__button').css('margin-top', '261px');
   $('.properties__item').css('opacity', '0');
   $('.accordion').css('display', 'block');
   $('.type-of-travel').css('display', 'none');
@@ -57,44 +58,44 @@ $('#form-request').validate({
     username: {
       required: true,
       minlength: 2,
-      maxlength: 15
+      maxlength: 15,
     },
     phone: {
       required: true,
       minlength: 2,
-      maxlength: 15
+      maxlength: 15,
     },
     where: {
       required: true,
       minlength: 2,
-      maxlength: 15
+      maxlength: 15,
     },
     when: {
       required: true,
       minlength: 2,
-      maxlength: 15
-    }
+      maxlength: 15,
+    },
   },
   messages: {
     phone: {
       required: 'Заполните поле',
       minlength: jQuery.validator.format('Минимум 2 символа'),
-      maxlength: jQuery.validator.format('Максимум 15 символов')
+      maxlength: jQuery.validator.format('Максимум 15 символов'),
     },
     username: {
       required: 'Заполните поле',
       minlength: jQuery.validator.format('Минимум 2 символа'),
-      maxlength: jQuery.validator.format('Максимум 15 символов')
+      maxlength: jQuery.validator.format('Максимум 15 символов'),
     },
     when: {
       required: 'Заполните поле',
       minlength: jQuery.validator.format('Минимум 2 символа'),
-      maxlength: jQuery.validator.format('Максимум 15 символов')
+      maxlength: jQuery.validator.format('Максимум 15 символов'),
     },
     where: {
       required: 'Укажите континент, страну или город',
       minlength: jQuery.validator.format('Минимум 2 символа'),
-      maxlength: jQuery.validator.format('Максимум 15 символов')
-    }
-  }
+      maxlength: jQuery.validator.format('Максимум 15 символов'),
+    },
+  },
 });
